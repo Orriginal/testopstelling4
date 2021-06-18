@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "allowSyntheticDefaultImports": true,
+        "allowUnreachableCode": false,
+        "declaration": false,
+        "experimentalDecorators": true,
+        "moduleResolution": "node",
+        "module": "ESNext",
+        "target": "ESNext",
+        "noUnusedLocals": true,
+        "jsx": "react",
+        "jsxFactory": "h",
+        "useDefineForClassFields": false
+    },
+    "include": [
+        "src",
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "ts-node": {
+        // these options are overrides used only by ts-node
+        // same as our --compilerOptions flag and our TS_NODE_COMPILER_OPTIONS environment variable
+        "compilerOptions": {
+            "module": "commonjs",
+        }
+    }
+}
